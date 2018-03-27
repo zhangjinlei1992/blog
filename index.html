@@ -7,37 +7,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Resume</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="//at.alicdn.com/t/font_604916_8ae58b1dm24bzkt9.js"></script>
 </head>
 <body>
-<div class="topNavBar clearfix">
-    <a href="#" class="logo">
-        <span class="rs">RS</span><span class="card">card</span>
-    </a>
-    <nav>
-        <ul class="clearfix">
-            <li><a href="#">关于</a></li>
-            <li><a href="#">技能</a></li>
-            <li><a href="#">作品</a></li>
-            <li><a href="#">博客</a></li>
-            <li><a href="#">日历</a></li>
-            <li><a href="#">联系方式</a></li>
-            <li><a href="#">其他</a></li>
-        </ul>
-    </nav>
+<div class="topNavBar">
+    <div class="topNavBar-inner clearfix">
+        <a href="#" class="logo">
+            <span class="rs">RS</span><span class="card">card</span>
+        </a>
+        <nav>
+            <ul class="clearfix">
+                <li><a href="#">关于</a></li>
+                <li><a href="#">技能</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">博客</a></li>
+                <li><a href="#">日历</a></li>
+                <li><a href="#">联系方式</a></li>
+                <li><a href="#">其他</a></li>
+            </ul>
+        </nav>
+    </div>
 </div>
-<div class="banner" style="background-image:url(#)"></div>
-<main>
-    <div class="card">
-        <div class="picture">
-            <img src="" alt="头像">
-        </div>
-        <div class="text">
-            <div class="summary">
-                <span class="welcome">Hello</span>
+<div class="banner">
+    <div class="mask"></div>
+</div>
+<main class="main">
+    <div class="userCard">
+        <div class="pictureAndText clearfix">
+            <div class="picture">
+                <img src="./image/avatar.jpg" alt="头像">
+            </div>
+            <div class="text">
+                <span class="welcome">Hello<span class="triangle"></span></span>
                 <h1>张 Ba Ba</h1>
                 <p>前 端 开 发 工 程 师</p>
                 <hr>
-                <dl>
+                <dl class="clearfix">
                     <dt>年龄</dt>
                     <dd>18</dd>
                     <dt>所在城市</dt>
@@ -48,46 +53,118 @@
                     <dd>183923212345</dd>
                 </dl>
             </div>
-            <footer class="media">
-                <a href="#"><img src="#" alt=""></a>
-                <a href="#"><img src="#" alt=""></a>
-                <a href="#"><img src="#" alt=""></a>
-                <a href="#"><img src="#" alt=""></a>
-                <a href="#"><img src="#" alt=""></a>
-                <a href="#"><img src="#" alt=""></a>
-                <a href="#"><img src="#" alt=""></a>
-            </footer>
         </div>
+        <footer class="media">
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weixin"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-twitter"></use>
+                </svg>
+            </a>
+        </footer>
+
     </div>
-    <a href="#" class="button"> 下 载 PDF 简 历 </a>
-    <p>adobe muse是由Adobe公司开发的网站开发工具,Muse 希望帮助设计师完成网页的交互设计,<br>
+    <p class="downloadWrap">
+        <a href="./file/ZhangBaBa前端工程师.PDF" class="downloadResume" download> 下 载 PDF 简 历 </a>
+    </p>
+    <p class="selfIntroduction">
+        adobe muse是由Adobe公司开发的网站开发工具,Muse 希望帮助设计师完成网页的交互设计,<br>
         而无需了解过多的代码。它支持HTML5、CSS3的复杂页面,也能够方便嵌入 Google ...</p>
 
 </main>
-<section>
+<section class="skills">
     <h2>技 能</h2>
-    <ol>
-        <li>Html5 &amp; Css3</li>
-        <li>JavaScript</li>
-        <li>jQuery</li>
-        <li>Vue</li>
-        <li>React</li>
-        <li>Http</li>
+    <ol class="clearfix">
+        <li>
+            <h3>Html5 &amp; Css3</h3>
+            <div class="progressBar">
+                <div class="progress"></div>
+            </div>
+        </li>
+        <li>
+            <h3>JavaScript</h3>
+            <div class="progressBar">
+                <div class="progress"></div>
+            </div>
+        </li>
+        <li>
+            <h3>jQuery</h3>
+            <div class="progressBar">
+                <div class="progress"></div>
+            </div>
+        </li>
+        <li>
+            <h3>Vue</h3>
+            <div class="progressBar">
+                <div class="progress"></div>
+            </div>
+        </li>
+        <li>
+            <h3>React</h3>
+            <div class="progressBar">
+                <div class="progress"></div>
+            </div>
+        </li>
+        <li>
+            <h3>Http</h3>
+            <div class="progressBar">
+                <div class="progress"></div>
+            </div>
+        </li>
     </ol>
 </section>
-<section>
+<section class="portfolio">
     <h2>作 品 集</h2>
     <nav>
-        <ol>
-            <li>所有</li>
-            <li>框架</li>
-            <li>原生JS</li>
+        <ol class="clearfix">
+            <li id="portfolioAll">所有</li>
+            <li id="portfolioFramework">框架</li>
+            <li id="portfolioNative">原生JS</li>
         </ol>
+        <div class="bar state-1" id="portfolioBar">
+            <div class="bar-inner"></div>
+        </div>
     </nav>
-    <div class="jobs">
-        <div class="big"></div>
-        <div class="small"></div>
-        <div class="small"></div>
+    <script>
+        portfolioAll.onclick=function () {
+            portfolioBar.className = 'bar state-1';
+        };
+        portfolioFramework.onclick=function () {
+            portfolioBar.className = 'bar state-2';
+        };
+        portfolioNative.onclick=function () {
+            portfolioBar.className = 'bar state-3';
+        }
+    </script>
+    <div class="works">
+        <div class="big">
+            <img src="./image/reteco1.jpg" alt="">
+        </div>
+        <div class="small">
+            <img src="./image/reteco2.jpg" alt="">
+        </div>
+        <div class="small small2">
+            <img src="./image/reteco3.jpg" alt="">
+        </div>
     </div>
 </section>
 </body>
