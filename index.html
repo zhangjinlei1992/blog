@@ -14,17 +14,31 @@
 <div class="welcomeWrap loadingActive" id="welcomeWrap">
     <div class="loading"></div>
 </div>
-<div class="topNavBar">
+<div class="topNavBar" id="topNavBar">
     <div class="topNavBar-inner clearfix">
         <a href="#" class="logo">
             <span class="rs">RS</span><span class="card">card</span>
         </a>
-        <nav>
+        <nav class="menu">
             <ul class="clearfix">
-                <li><a href="#">关于</a></li>
-                <li><a href="#">技能</a></li>
-                <li><a href="#">作品</a></li>
-                <li><a href="#">博客</a></li>
+                <li><a href="#siteAbout">关于</a></li>
+                <li><a href="#siteSkills">技能</a></li>
+                <li class="menuToggle">
+                    <a href="#siteWorks">作品</a>
+                    <ul class="submenu">
+                        <li>作品1</li>
+                        <li>作品2</li>
+                        <li>作品3</li>
+                    </ul>
+                </li>
+                <li class="menuToggle">
+                    <a href="#">博客</a>
+                    <ul class="submenu">
+                        <li>博客1</li>
+                        <li>博客2</li>
+                        <li>博客3</li>
+                    </ul>
+                </li>
                 <li><a href="#">日历</a></li>
                 <li><a href="#">联系方式</a></li>
                 <li><a href="#">其他</a></li>
@@ -36,7 +50,7 @@
     <div class="mask"></div>
 </div>
 <main class="main">
-    <div class="userCard">
+    <div data-x class="userCard" id="siteAbout">
         <div class="pictureAndText clearfix">
             <div class="picture">
                 <img src="./image/avatar.jpg" alt="头像">
@@ -95,7 +109,7 @@
         而无需了解过多的代码。它支持HTML5、CSS3的复杂页面,也能够方便嵌入 Google ...</p>
 
 </main>
-<section class="skills">
+<section data-x class="skills" id="siteSkills">
     <h2>技 能</h2>
     <ol class="clearfix">
         <li>
@@ -136,7 +150,7 @@
         </li>
     </ol>
 </section>
-<section class="portfolio">
+<section data-x class="portfolio" id="siteWorks">
     <h2>作 品 集</h2>
     <nav>
         <ol class="clearfix">
@@ -171,6 +185,7 @@
         </div>
     </div>
 </section>
+<script src="js/tween.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
